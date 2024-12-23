@@ -5,13 +5,7 @@ import java.util.Scanner;
 public class ProgramaCabelereiro {
     public static void main(String[] args) {
         CadastroList clientes = new CadastroList();
-        Scanner sc = new Scanner(System.in);
-        boolean debtErr = false;
-        String debito = "";
-        boolean continuar = true;
-        while (continuar) {
-
-            System.out.println("""
+        String menu = """
                     Seja bem vindo ao Menu do Cabelereiro, o que desejas fazer?
                                         
                     1 - Cadastrar cliente à fila
@@ -22,7 +16,14 @@ public class ProgramaCabelereiro {
                     6 - Verificar fila de clientes
                     7 - Remover o débito com a Barbearia
                     8 - Sair
-                    """);
+                    """;
+        Scanner sc = new Scanner(System.in);
+        boolean debtErr = false;
+        String debito = "";
+        boolean continuar = true;
+        while (continuar) {
+
+            System.out.println(menu);
 
             String opcao = sc.nextLine();
 
