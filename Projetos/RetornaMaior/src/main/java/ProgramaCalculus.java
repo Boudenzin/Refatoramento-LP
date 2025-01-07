@@ -25,6 +25,7 @@ public class ProgramaCalculus {
                     System.out.println("Digite o segundo número:");
                     num2 = Integer.parseInt(sc.nextLine());
                     maior = Calculus.max(num1,num2);
+                    break;
                 case 2:
                     System.out.println("Digite o primeiro número:");
                     num1 = Integer.parseInt(sc.nextLine());
@@ -33,17 +34,19 @@ public class ProgramaCalculus {
                     System.out.println("Digite o terceiro número:");
                     num3 = Integer.parseInt(sc.nextLine());
                     maior = Calculus.max(num1,num2,num3);
+                    break;
                 case 3:
                     System.out.println("Quantos números você quer analisar?");
                     quantNumeros = Integer.parseInt(sc.nextLine());
                     for (int k = 0; k<quantNumeros; k++) {
-                        System.out.println("Digite o ("[+ (k + 1)+]"número");
+                        System.out.println("Digite o [" + (k + 1) +"] número");
+                    }
+                    break;
                     }
 
             }
 
-            }
         }
-
     }
-}
+
+
